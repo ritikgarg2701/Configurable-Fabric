@@ -17,7 +17,8 @@ The switch box(SB) is designed to have 4 INPUT and 4 OUTPUTS. A block representa
 ## Design
 
 ![Logic Tile](design-images/fpga-design.png)
-**Fig. 2: FPGA Fabric for 4-bit adder, 8:3 encoder and 8-bit Universal Shift Register**
+
+<center>Centered text</center>**Fig. 2: FPGA Fabric for 4-bit adder, 8:3 encoder and 8-bit Universal Shift Register**
 
 The circuit in Fig. 2 represents an FPGA fabric to perform the functionalities of either a 4-bit adder, an 8:3 encoder, or an 8-bit Universal Shift Register. The FPGA is built using 5-input logic tiles($LTs$) and 4x4 switch boxes($SBs$). The design consists of eight primarily logic tiles($L0-L7$), responsible for implementing the main functions governing the three test designs; eight secondary logic tiles($Z0-Z7$), accountable for carrying out secondary calculations; and 28 switch boxes($SB1-SB28$), functioning as one-hot encoded MUXs. At every logic tile input or every FPGA output port, there can be three choices at maximum(since there are three different circuits). $SBs$ select the required signals.
 
